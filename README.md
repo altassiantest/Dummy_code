@@ -39,12 +39,17 @@ This repository contains a variety of small, self-contained Python scripts cover
 | 18 | `18_date_utils.py` | Date arithmetic helpers |
 | 19 | `19_http_client.py` | Simple HTTP client wrapper |
 | 20 | `20_todo_manager.py` | Todo list manager class |
+| 21 | `21_linked_list.py` | Singly linked list implementation |
+| 22 | `22_caesar_cipher.py` | Caesar cipher encryption/decryption |
+| 23 | `23_dice_roller.py` | Random dice roller with notation parser (e.g. `2d6`) |
+| 24 | `24_csv_parser.py` | CSV read/write/filter utilities |
+| 25 | `25_weather_fetcher.py` | Fetches weather data from OpenWeatherMap API |
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 - Python 3.8+
-- `requests` library (for `list_use_case.py` and `19_http_client.py`)
+- `requests` library (for `list_use_case.py`, `19_http_client.py`, and `25_weather_fetcher.py`)
 
 ### Installation
 ```bash
@@ -63,12 +68,13 @@ python 02_fibonacci.py
 
 ## 🔐 Environment Variables
 
-The `list_use_case.py` script requires the following environment variables:
+Some scripts require environment variables:
 
-| Variable | Description |
-|----------|-------------|
-| `AIFORCE_BASE_URL` | Base URL of the AIforce API |
-| `TOOL_API_KEY` or `USECASE_AUTH_TOKEN` | Bearer token for authentication |
+| Variable | Used By | Description |
+|----------|---------|-------------|
+| `AIFORCE_BASE_URL` | `list_use_case.py` | Base URL of the AIforce API |
+| `TOOL_API_KEY` or `USECASE_AUTH_TOKEN` | `list_use_case.py` | Bearer token for authentication |
+| `OPENWEATHER_API_KEY` | `25_weather_fetcher.py` | API key from OpenWeatherMap |
 
 ## 📝 Purpose
 
